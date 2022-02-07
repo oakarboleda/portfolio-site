@@ -10,20 +10,20 @@
       "withTest": false,
       "withStory": false,
       "withLazy": true
+    },
+    "page": {
+      "path": "src/pages",
+      "withLazy": true,
+      "withStory": false,
+      "withStyle": true,
+      "withTest": true
+    },
+    "layout": {
+      "path": "src/layout",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": false,
+      "withTest": true
     }
-  },
-  "page": {
-    "path": "src/pages",
-    "withLazy": true,
-    "withStory": false,
-    "withStyle": true,
-    "withTest": true
-  },
-  "layout": {
-    "path": "src/layout",
-    "withLazy": false,
-    "withStory": false,
-    "withStyle": false,
-    "withTest": true
   }
 }
