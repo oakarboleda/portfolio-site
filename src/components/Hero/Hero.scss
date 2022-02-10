@@ -1,1 +1,59 @@
-.Hero {}
+
+canvas{
+  position: absolute;
+  height:100vh !important;
+  width: 100vw !important;
+  max-width:100% !important;
+}
+
+#particles-js{
+  padding: 0;
+  margin: 0;
+}
+.my-image {
+  height: 100%;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    width: 80%;
+    height: 45%;
+    content: "";
+    z-index: -2;
+    left: 6em;
+    top: 1.5em;
+    border: 5px solid #fff;
+  }
+}
+
+
+.content-small{
+  flex-direction: column-reverse;
+  justify-content: center;
+  float: left;
+  align-items: center;
+}
+
+.content-wrapper {
+
+  justify-content: center;
+  p {
+    margin: 0;
+  }
+}
+
+.content-text-small{
+  color: var(--primary-color);
+  margin-bottom:50px;
+}
+
+
+.content-text-title{
+  color:var(--third-color);
+  margin-left: -5px !important;
+  font-size: 5em;
+  font-weight: 900;
+  font-family: 'Muli', sans-serif;
+  padding: 0.1em 0;
+}
