@@ -24,22 +24,36 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@master
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+         node-version: ${{ matrix.node-version }}
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+         path: |
+          **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+     
       - name: Installing project dependencies
         run: npm install
-      - name: Building the project
+      - name: Run the tests and generate coverage report
+        run: npm test -- --coverage
+        
+      - name: Build
         run: npm run build
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       
-      
-      - uses: sand4rt/ftp-deployer@v1.3
-        with:
-         sftp: true
-         host: ${{ secrets.FTP_HOST }}
-         username: ${{ secrets.FTP_USERNAME }}
-         password: ${{ secrets.FTP_PASSWORD }} # FTP password
-         remote_folder: ${{ secrets.FTP_REMOTE_FOLDER }} # optional, remote path of your FTP server
-         local_folder: dist # optional, local path, default is: dist
-         cleanup: false # optional, remove existing files inside FTP remote folder
-         
+      - name: Deploy
+        run: |
+         git config --global user.name $user_name
+         git config --global user.email $user_email
+         git remote set-url origin https://${github_token}@github.com/${repository}
+         npm run deploy
+         env:
+         user_name: 'github-actions[bot]'
+         user_email: 'github-actions[bot]@users.noreply.github.com'
+         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+         repository: ${{ github.repository }}
+    
