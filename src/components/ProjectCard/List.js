@@ -14,14 +14,7 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 
 const List = (props) => {
-  const {
-    name,
-    description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
-  } = props;
+
   const { repos } = props;
   if (!repos || repos.length === 0) return <p>No repos, sorry</p>;
   return (

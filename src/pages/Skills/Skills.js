@@ -8,21 +8,6 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import './Skills.scss';
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaGitAlt,
-  FaLinux,
-} from 'react-icons/fa';
-import {
-  SiJavascript,
-  SiMongodb,
-  SiMysql,
-  SiFirebase,
-  SiTypescript,
-} from 'react-icons/si';
 import { programmingLanguages,data, fnl, snt } from '../../resumeData';
 
 

@@ -1,12 +1,7 @@
 import React from 'react';
 import './TypedText.scss';
 import {
-  Stack,
-  Container,
-  Box,
-  Flex,
   Text,
-  Heading,
 } from '@chakra-ui/react';
 import { dataStrings } from '../../resumeData.js'
 
