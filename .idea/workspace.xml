@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="099842ee-5129-454d-95b6-444cf338b521" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <updated>1643844065904</updated>
       <workItem from="1643844067389" duration="2749000" />
       <workItem from="1644262828150" duration="90000" />
-      <workItem from="1644467798909" duration="3743000" />
+      <workItem from="1644467798909" duration="4410000" />
     </task>
     <servers />
   </component>
