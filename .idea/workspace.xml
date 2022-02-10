@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37400a34-c799-432b-9c15-92ff731dc7c8" name="Changes" comment="">
+
+    <list default="true" id="099842ee-5129-454d-95b6-444cf338b521" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +18,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+
         <option value="SCSS File" />
+
       </list>
     </option>
   </component>
@@ -52,7 +59,9 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
@@ -90,6 +99,7 @@
       <created>1644265082740</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+
       <updated>1644265082740</updated>
       <workItem from="1644265083882" duration="19159000" />
       <workItem from="1644287126888" duration="4955000" />
@@ -99,6 +109,12 @@
       <workItem from="1644425199104" duration="187000" />
       <workItem from="1644425397475" duration="3483000" />
       <workItem from="1644435141828" duration="20780000" />
+
+      <updated>1643844065904</updated>
+      <workItem from="1643844067389" duration="2749000" />
+      <workItem from="1644262828150" duration="90000" />
+      <workItem from="1644467798909" duration="3743000" />
+
     </task>
     <servers />
   </component>
@@ -116,8 +132,9 @@
       </map>
     </option>
   </component>
+
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
+
 </project>
