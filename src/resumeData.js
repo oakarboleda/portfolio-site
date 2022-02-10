@@ -34,4 +34,5 @@ const dataStrings = [
   "Powered by caffeine"
 ];
 
+
 export { illustration, about, data, programmingLanguages, fnl, snt, dataStrings };

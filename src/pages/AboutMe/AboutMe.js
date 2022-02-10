@@ -1,24 +1,23 @@
 import React from 'react';
 import './AboutMe.scss';
-import { Box, Text, Stack, Container, Button } from '@chakra-ui/react';
+import { Flex, Box, Text, Stack, Container, Button, Image } from '@chakra-ui/react';
 import { about } from '../../resumeData';
 
 
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
-
-  React.useEffect(() => {
-
-  })
-  let profilePicUrl = "";
   return (
-    <Container maxW={'7xl'} zIndex={10} position={'relative'} id="aboutme" className="jumbotron jumbotron-fluid m-0">
-      <Box p={4}>
-        <Stack spacing={4} as={Container} maxW={'3xl'}>
-          <img
-              src={profilePicUrl}
-              alt="profilepicture"
-            /></Stack>
-        <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+    <Container maxW={'7xl'} zIndex={10} position={'relative'} id="aboutme" className="jumbotron">
+      <Flex p={5} flex={1} align={'center'} justify={'center'}>
+        <Stack align={'center'} justify={'center'}>
+          <Box boxSize='sm'>
+            <Image
+              src='oak.png'
+              fallbackSrc='https://via.placeholder.com/150'
+              alt='Oak Arboleda'
+            />
+          </Box>
+        </Stack>
+        <Stack align={'center'} justify={'center'}>
         <Text className="display-4 mb-5 text-center">{about.heading}</Text>
         <Text className="lead text-center">{about.message}</Text>
         {about.resume && (
@@ -36,12 +35,11 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           </p>
         )}
       </Stack>
-    </Box>
+      </Flex>
     </Container>
-
-
-
   )
 }
+
+
 
 export default AboutMe;

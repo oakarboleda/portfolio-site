@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37400a34-c799-432b-9c15-92ff731dc7c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Hero/particles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Loading/Loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Loading/Loading.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resumeData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectCard/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectCard/Projects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stylesheets/_globalcolors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate-react-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/generate-react-cli.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hello/Hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hello/Hello.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hello/Hello.lazy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hello/Hello.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hello/Hello.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.lazy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TypedText/TypedText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TypedText/TypedText.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/AboutMe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.lazy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage/HomePage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage/HomePage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProjectsPage/ProjectsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resumeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resumeData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/custom.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +110,8 @@
       <workItem from="1644358391021" duration="8616000" />
       <workItem from="1644376720405" duration="671000" />
       <workItem from="1644425199104" duration="187000" />
-      <workItem from="1644425397475" duration="3442000" />
+      <workItem from="1644425397475" duration="3483000" />
+      <workItem from="1644435141828" duration="18153000" />
     </task>
     <servers />
   </component>

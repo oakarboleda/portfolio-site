@@ -15,10 +15,10 @@ import {
 import { AiOutlineMenu } from "react-icons/ai";
 
 
+
 export default function Nav() {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
-
   return (
     <React.Fragment>
       <chakra.header
@@ -32,15 +32,14 @@ export default function Nav() {
           <Flex>
             <chakra.a
               href="/"
-              title="Choc Home Page"
+              title="Oak Arboleda Personal Page"
               display="flex"
               alignItems="center"
             >
-
-              <VisuallyHidden>Choc</VisuallyHidden>
+              <VisuallyHidden>OA</VisuallyHidden>
             </chakra.a>
             <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-              Choc
+              Oak
             </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>

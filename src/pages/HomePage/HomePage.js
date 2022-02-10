@@ -9,7 +9,6 @@ import ProjectsPage from '../ProjectsPage/ProjectsPage';
 
 
 const HomePage = () => (
-
   <div className="HomePage" data-testid="HomePage">
     <Hero/>
     <Aboutme />
