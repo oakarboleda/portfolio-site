@@ -13,20 +13,19 @@ jobs:
     - name: Installing project dependencies
       run: npm install
     - name: Building the project
-      run: npm run production
+      run: npm run build
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: FTP Deployer
       uses: sand4rt/ftp-deployer@v1.3
-      with:
-       sftp: true # optional
-       host: ${{ secrets.brooks.dreamhost.com }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
+       sftp: true
+       host: ${{ secrets.FTP_HOST }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
        port: 21 # optional, default is: 21
-       username: ${{ secrets.dh_ycrkg7 }} # FTP username
-       password: ${{ secrets.eW401zFU }} # FTP password
-       remote_folder: ${{ secrets.oakarboleda.com }} # optional, remote path of your FTP server
+       username: ${{ secrets.FTP_USERNAME }} # FTP username
+       password: ${{ secrets.FTP_PASSWORD }} # FTP password
+       remote_folder: ${{ secrets.FTP_REMOTE_FOLDER }} # optional, remote path of your FTP server
        local_folder: dist # optional, local path, default is: dist
        cleanup: false # optional, remove existing files inside FTP remote folder
        include: [] # optional, e.g. ['dist']
-       exclude: ['node_modules/**', '.git/**', '*.env']
+       exclude: ['node_modules/**', '.git/**', '*.env'] # optional, e.g. ['node_modules/**', '.git/**', '*.env']
        pasive: true # optional
