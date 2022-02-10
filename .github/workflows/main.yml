@@ -19,24 +19,31 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repository
       - uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v2.5.1
-     
-      - name: Installing project dependencies
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
         run: npm install
-        
+
       - name: Run the tests and generate coverage report
         run: npm test -- --coverage
-        
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+
       - name: Build
         run: npm run build
-      
-      
+
       - name: Deploy
         run: |
          git config --global user.name $user_name
