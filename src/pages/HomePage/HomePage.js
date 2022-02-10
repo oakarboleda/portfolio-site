@@ -1,15 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './HomePage.scss';
+import Hero from '../../components/Hero/Hero';
+
+import Aboutme from '../AboutMe/AboutMe'
+import Skills from '../Skills/Skills';
+import ContactPage from '../ContactPage/ContactPage';
+import ProjectsPage from '../ProjectsPage/ProjectsPage';
+
 
 const HomePage = () => (
   <div className="HomePage" data-testid="HomePage">
-    HomePage Component
+    <Hero/>
+    <Aboutme />
+    <Skills />
+    <ProjectsPage/>
+    <ContactPage/>
   </div>
+
 );
 
-HomePage.propTypes = {};
-
-HomePage.defaultProps = {};
 
 export default HomePage;
