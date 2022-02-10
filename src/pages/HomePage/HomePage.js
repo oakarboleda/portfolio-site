@@ -5,7 +5,7 @@ import Hero from '../../components/Hero/Hero';
 import Aboutme from '../AboutMe/AboutMe'
 import Skills from '../Skills/Skills';
 import ContactPage from '../ContactPage/ContactPage';
-import ProjectsPage from '../ProjectsPage/ProjectsPage';
+// import ProjectsPage from '../ProjectsPage/ProjectsPage';
 
 
 const HomePage = () => (
@@ -13,7 +13,7 @@ const HomePage = () => (
     <Hero/>
     <Aboutme />
     <Skills />
-    <ProjectsPage/>
+    {/*<ProjectsPage/>*/}
     <ContactPage/>
   </div>
 

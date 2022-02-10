@@ -46,8 +46,6 @@ const List = (props) => {
               ) : (
                 <Skeleton count={3} />
               )}
-
-
               <CardFooter star_count={repo.stargazers_count} repo_url={repo.svn_url} pushed_at={repo.pushed_at} />
 
 

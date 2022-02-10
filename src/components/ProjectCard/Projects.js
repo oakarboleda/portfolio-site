@@ -32,8 +32,8 @@ const Project = () => {
       direction={'row'}
       id="projects" className="bg-light">
         <Heading mb={4} color="#0b0710"> Current Projects </Heading>
-
-          <ProjectCard
+            <ProjectCard
+              key={appState.item}
             isLoading={appState.loading}
             repos={appState.repos}
           />
