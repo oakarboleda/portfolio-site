@@ -2,7 +2,7 @@ import React from 'react';
 import './HomePage.scss';
 import Hero from '../../components/Hero/Hero';
 
-import Aboutme from '../AboutMe/AboutMe'
+// import Aboutme from '../AboutMe/AboutMe'
 import Skills from '../Skills/Skills';
 import ContactPage from '../ContactPage/ContactPage';
 // import ProjectsPage from '../ProjectsPage/ProjectsPage';
@@ -11,7 +11,7 @@ import ContactPage from '../ContactPage/ContactPage';
 const HomePage = () => (
   <div className="HomePage" data-testid="HomePage">
     <Hero/>
-    <Aboutme />
+    {/*<Aboutme />*/}
     <Skills />
     {/*<ProjectsPage/>*/}
     <ContactPage/>

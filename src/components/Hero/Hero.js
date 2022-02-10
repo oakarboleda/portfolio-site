@@ -47,8 +47,8 @@ export default class Hero extends Component {
               <FontAwesomeIcon icon={faAngleDoubleDown} />
           </Stack>
         </Flex>
-          <Flex p={5} flex={1} align={'center'} justify={'center'}>
-            <div className="my-image">
+          <Flex p={2} flex={1} align={'center'} justify={'center'}>
+            <div className="greeting-image-div">
               {illustration.animated ? (
                 <Lottie animationData={girl} />
               ) : (

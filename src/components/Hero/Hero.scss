@@ -1,9 +1,5 @@
-
 canvas{
   position: absolute;
-  height:100vh !important;
-  width: 100vw !important;
-  max-width:100% !important;
 }
 
 #particles-js{
@@ -11,7 +7,7 @@ canvas{
   margin: 0;
 }
 .my-image {
-  height: 100%;
+
   flex: 1;
   position: relative;
   z-index: 1;
@@ -25,8 +21,12 @@ canvas{
     top: 1.5em;
     border: 5px solid #fff;
   }
-}
 
+}
+.greeting-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
 
 .content-small{
   flex-direction: column-reverse;
