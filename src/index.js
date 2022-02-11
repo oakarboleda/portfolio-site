@@ -1,14 +1,17 @@
-import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import "./stylesheets/custom.scss";
+import './stylesheets/custom.scss';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
+// Import Bootstrap CSS and JS
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+
+
 ReactDOM.render(
   <StrictMode>
-    <ColorModeScript />
     <App />
   </StrictMode>,
   document.getElementById('root')
