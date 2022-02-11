@@ -1,3 +1,14 @@
-
+.footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: black;
+  font-size: 0.8em;
+  /* z-index: -1; */
+}
 
 /*# sourceMappingURL=Footer.css.map */

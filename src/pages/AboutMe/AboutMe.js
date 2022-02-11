@@ -11,6 +11,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
       <div className="row d-md-flex-row  overflow-hidden">
         <div className="col-md-4  p-0 col-12 bg-light d-flex overflow-hidden ">
           <div className="card p-0   w-100 h-100 text-light   border-0 ">
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <img className="card-img h-100 w-100"
                  src="https://unsplash.com/photos/3TLl_97HNJo"
                  alt="Card image" />

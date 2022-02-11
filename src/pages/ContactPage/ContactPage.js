@@ -1,6 +1,5 @@
 import React from 'react';
 import { contactInfo} from "../../resumeData";
-import {Fade} from "react-bootstrap";
 
 const ContactPage = () => (
   <div className="ContactPage container fluid py-1" data-testid="ContactPage">
