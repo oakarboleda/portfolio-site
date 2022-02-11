@@ -1,76 +1,62 @@
-import React from 'react';
-import {
-  Stack,
-  Container,
-  Box,
-  Flex,
-  Text,
-  Heading,
-} from '@chakra-ui/react';
+import React, { Component } from "react";
+import { skills } from '../../resumeData';
 import './Skills.scss';
-import { programmingLanguages,data, fnl, snt } from '../../resumeData';
 
+import { Container, Row, Col } from 'react-bootstrap'
 
+function TechSkills(props) {
+  const skillItem = props.skills.map((skill, i) => {
+    // const skillSwitch = (val) => {
+    //   switch (val) {
+    //     case '1':
+    //       return (1)
+    //     case '2':
+    //       return (2)
+    //     default:
+    //       return (3)
+    //   }
+    // }
+    return (
+      <Col>
+        <a key={i} target="_blanck" href={skill.url} className="grid-item main">
+        <img className="skill-img" src={skill.img} alt={skill.text} title={skill.title} />
+      </a>
+      </Col>
+    );
+  });
 
-const Skills = () => {
   return (
-      <Box>
-          <Stack direction={{ base: 'column', lg: 'row' }}>
-            <Stack
-              flex={1}
-              justify={{ lg: 'center' }}>
-              <Box>
-                <Heading mb="6" >
-                  Skills
-                </Heading>
-                <Text fontSize="lg" >
-                  These are are things I have worked with.
-                </Text>
-              </Box>
-              <Flex justify="space-between" wrap="wrap">
-                <SkillBlocks
-                  title="Programming languages"
-                  itemsArray={programmingLanguages}
-                />
-                <SkillBlocks title="Data" itemsArray={data} />
-              </Flex>
-              <Flex justify="space-between" wrap="wrap">
-                <SkillBlocks
-                  title="Frameworks Libraries"
-                  itemsArray={fnl}
-                />
-                <SkillBlocks
-                  title="Other Skills Tools"
-                  itemsArray={snt}
-                />
-              </Flex>
-            </Stack>
-          </Stack>
-
-      </Box>
-
-
-
-
-  );
-}
-function SkillBlocks({ title, itemsArray }) {
-  return (
-    <Box width={{ base: '100%', md: '45%' }} mb="6">
-      <Heading mb="6" size="md">
-        {title}
-      </Heading>
-      {itemsArray &&
-        itemsArray.map((item, index) => {
-          return (
-            <Text fontSize="md"  mb="2" key={index}>
-              {item}
-            </Text>
-          );
-        })}
-    </Box>
+    <React.Fragment>
+      <h5 className="skills-header">{props.title}</h5>
+      <Container>
+        <Row>{skillItem}</Row>
+      </Container>
+    </React.Fragment>
   );
 }
 
+class Skills extends Component {
+  render() {
+    return (
+      <div className="container-fluid App-Content" id="tech">
+        <h3>I like to work with technologies such as:</h3>
+        <Row md={8}>
+          <TechSkills className="align-content-center" title="Technology" skills={skills.hard} />
+        </Row>
+        <Row md={8}>
+          <TechSkills title="Tools" skills={skills.soft} />
+
+        </Row>
+        <Row md={8}>
+          <TechSkills title="Managment" skills={skills.managment} />
+
+        </Row>
+      </div>
+    );
+  }
+}
 
 export default Skills;
+
+
+

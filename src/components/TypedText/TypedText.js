@@ -1,8 +1,6 @@
 import React from 'react';
 import './TypedText.scss';
-import {
-  Text,
-} from '@chakra-ui/react';
+
 import { dataStrings } from '../../resumeData.js'
 
 export default class TypedText extends React.Component {
@@ -44,10 +42,10 @@ export default class TypedText extends React.Component {
   }
   render(){
     return(
-      <Text fontSize='md' className="canvas-text-subtitle">
+      <p  className="canvas-text-subtitle">
         <span>{this.state.text}</span>
         <span id='cursor'/>
-      </Text>
+      </p>
     )
   }
 }

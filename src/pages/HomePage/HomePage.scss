@@ -1,3 +1,15 @@
-.HomePage {
+#home {
+  padding: 0;
+  position: relative;
+}
+canvas{
+  position: relative;
+  height:100vh !important;
+  width: 100vw !important;
+  max-width:100% !important;
+}
 
+#particles-js{
+  padding: 0;
+  margin: 0;
 }

@@ -1,11 +1,26 @@
-#Skills {
-
-    display: flex;
-
-p {
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: normal;
-  font-size: 16px;
+.Tech {
+  text-align: left;
+  text-decoration: none !important;
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 15%;
 }
-
+.App-Content {
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: 8%;
+  margin-top: 2.2%;
+  background-color: var(--body-bg);
+  color: var(--body-color);
+  border-radius: 10px;
+  border: #e2effc 1px solid;
+  padding: 5%;
+  text-align: left;
+  flex-direction: column;
+  transition: all .5s;
+}
+.skill-img {
+  width: 15vh;
+  padding: 5px;
 }
