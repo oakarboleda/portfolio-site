@@ -1,42 +1,24 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import {
-  Heading,
-  Box,
-  Skeleton,
-  Text,
-  Stack,
-  Button,
-  Grid,
-  GridItem,
-} from '@chakra-ui/react';
 import axios from 'axios';
-import { FaGithubSquare } from 'react-icons/fa';
+import { Row, Card, Col, Button } from 'react-bootstrap';
+import Skeleton from 'react-loading-skeleton';
 
 
 const List = (props) => {
-
   const { repos } = props;
   if (!repos || repos.length === 0) return <p>No repos, sorry</p>;
   return (
-    <Grid templateColumns='repeat(4, 1fr)' spacing={4} gap={6}>
+    <Row fluid>
+
       {repos.map((repo) => {
         return (
-          <GridItem>
-            <Box
-              role={'group'}
-              p={6}
-              maxW={'330px'}
-              w={'full'}
-              boxShadow={'2xl'}
-              rounded={'lg'}
-              pos={'relative'}
-              zIndex={1}>
-              <Heading color='#262626' fontSize={'2xl'} fontFamily={'body'}>
-                {repo.name} </Heading>
-              <Text
-                color='#868dc3'
-                textAlign={'center'}
-                py={3}>{(!repo.description)?"":repo.description || <Skeleton count={3} />}</Text>
+          <Col md={4} className="py-md-2">
+
+            <Card>
+              <Card.Body>
+            <p>
+                {repo.name} </p>
+              <p>{(!repo.description)?"":repo.description || <Skeleton count={3} />}</p>
               <br/>
               {repo.svn_url ?
                 <CardButtons svn_url={repo.svn_url} /> : <Skeleton count={2} />}
@@ -48,13 +30,13 @@ const List = (props) => {
               )}
               <CardFooter star_count={repo.stargazers_count} repo_url={repo.svn_url} pushed_at={repo.pushed_at} />
 
-
-            </Box>
-
-          </GridItem>
+              </Card.Body>
+            </Card>
+          </Col>
         );
       })}
-    </Grid>
+
+    </Row>
 
   );
 };
@@ -85,17 +67,17 @@ const Language = ({ language, repo_url }) => {
     <div className="pb-3">
       Languages:{" "}
       {array.length
-        ? array.map((language) => (
-          <Text
+        ? array.map((languages_url) => (
+          <p
             color='gray'
-            key={language}
+            key={languages_url}
             className="badge badge-dark card-link"
-            href={repo_url + `/search?l=${language}`}
+            href={repo_url + `/search?l=${languages_url}`}
             target=" _blank"
           >
-            {language}:{" "}
-            {Math.trunc((data[language] / total_count) * 1000) / 10} %
-          </Text>
+            {languages_url}:{" "}
+            {Math.trunc((data[languages_url] / total_count) * 1000) / 10} %
+          </p>
         ))
         : "code yet to be deployed."}
     </div>
@@ -104,14 +86,14 @@ const Language = ({ language, repo_url }) => {
 const CardButtons = ({ svn_url }) => {
   return (
     <>
-      <Stack  py={4} direction='row' spacing={4}>
-        <Button leftIcon={<FaGithubSquare />} colorScheme='pink' variant='solid'>
+      <Row>
+        <Button variant="primary" size="md">
           Clone Project
         </Button>
-        <Button leftIcon={<FaGithubSquare />} colorScheme='pink' variant='solid'>
+        <Button variant="primary" size="md">
           Repo
         </Button>
-      </Stack>
+      </Row>
     </>
   );
 };
@@ -140,7 +122,8 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
   }, [handleUpdatetime]);
 
   return (
-    <p className="card-text">
+    <Row className="CardFooter">
+      <p className="card-text">
       <a
         href={repo_url + "/stargazers"}
         target=" _blank"
@@ -151,8 +134,9 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
           <span className="badge badge-dark">{star_count}</span>
         </span>
       </a>
-      <Text fontSize='xs' className="text-muted">Updated {updated_at}</Text>
+      <p className="text-muted">Updated {updated_at}</p>
     </p>
+    </Row>
   );
 };
 

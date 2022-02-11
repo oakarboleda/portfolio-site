@@ -5,6 +5,7 @@
   flex-direction: column;
   margin-left: 15%;
 }
+
 .App-Content {
   width: 90%;
   height: auto;
@@ -18,9 +19,12 @@
   padding: 5%;
   text-align: left;
   flex-direction: column;
-  transition: all .5s;
+  transition: all 0.5s;
 }
+
 .skill-img {
   width: 15vh;
   padding: 5px;
 }
+
+/*# sourceMappingURL=Skills.css.map */
