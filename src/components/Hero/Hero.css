@@ -1,3 +1,4 @@
+/* SCSS HSL */
 .canvas-content-wrapper {
   position: absolute;
   top: 0;
@@ -8,23 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  font-family: "Montserrat", sans-serif;
-}
-
-.canvas-content {
-  padding: 0 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-}
-
-.canvas-content-small {
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
 }
 
 .canvas-content-wrapper p {
@@ -32,8 +16,15 @@
 }
 
 .canvas-content-text-small {
-  color: var(--primary-color);
+  color: #adb8d1;
   margin-bottom: 50px;
+  font-size: 2.5em;
+}
+
+.canvas-content-text-xsmall {
+  color: #adb8d1;
+  margin-bottom: 50px;
+  font-size: 1em;
 }
 
 .canvas-content-text-centred {
@@ -41,27 +32,26 @@
 }
 
 .canvas-content-text-title {
-  color: var(--third-color);
+  color: #F6F7F2;
   margin-left: -5px !important;
   font-size: 5em;
   font-weight: 900;
-  font-family: "Muli", sans-serif;
   padding: 0.1em 0;
 }
 
 .canvas-content-image-wrapper {
   margin: 0 0 30px 0;
+  width: 77%;
 }
-
-.scroll-button {
+.canvas-content-image-wrapper::before {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  padding: 10px;
-  transition: 0.2s fade-in;
-  color: var(--primary-color);
-  animation: MoveUpDown 0.7s linear infinite;
-  font-size: 18px;
+  width: 80%;
+  height: 89%;
+  content: "";
+  z-index: -2;
+  left: 6em;
+  top: 1.5em;
+  border: 5px solid #fff;
 }
 
 @media (max-width: 1024px) {

@@ -4,16 +4,15 @@ import { Button} from 'react-bootstrap';
 import { about } from '../../resumeData';
 
 
-const AboutMe = ({ heading, message, link, imgSize, resume }) => {
+const AboutMe = ({ heading, message, resume, imageLink }) => {
   return (
-
     <div className="container-fluid m-0 ">
       <div className="row d-md-flex-row  overflow-hidden">
         <div className="col-md-4  p-0 col-12 bg-light d-flex overflow-hidden ">
           <div className="card p-0   w-100 h-100 text-light   border-0 ">
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <img className="card-img h-100 w-100"
-                 src="https://unsplash.com/photos/3TLl_97HNJo"
+                 src={require('../../assets/self.jpeg')}
                  alt="Card image" />
               <div className="card-img-overlay p-1 p-md-3">
                 <div className="position-relative  w-100 h-25  d-flex">

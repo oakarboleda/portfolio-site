@@ -1,0 +1,10 @@
+/* The following block can be included in a custom.scss */
+/* make the customizations */
+/* SCSS HSL */
+.Hello {
+  margin: 2% 0;
+  font-size: 3em;
+  color: #adb8d1;
+}
+
+/*# sourceMappingURL=Hello.css.map */

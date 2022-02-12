@@ -1,18 +1,26 @@
-#home {
-  padding: 0;
-  position: relative;
-}
-
-canvas {
-  position: relative;
+/* The following block can be included in a custom.scss */
+/* make the customizations */
+/* SCSS HSL */
+#particles-js {
+  display: flex;
+  position: absolute !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   height: 100vh !important;
   width: 100vw !important;
   max-width: 100% !important;
-}
-
-#particles-js {
   padding: 0;
   margin: 0;
+  background-color: #0A0908;
+}
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 0.4px !important;
+  padding-top: 0.5px !important;
 }
 
 /*# sourceMappingURL=HomePage.css.map */

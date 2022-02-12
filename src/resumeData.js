@@ -4,7 +4,6 @@ const illustration = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("./assets/oak.png"),
   imageSize: 375,
   message:
     "I’m a full-stack engineer, a designer, and game enthusiast",

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hello.scss';
+
 import Typical from "react-typical";
 
 const Hello = () => (

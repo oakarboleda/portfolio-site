@@ -6,9 +6,6 @@ import Hello from "../Hello/Hello";
 import Lottie from "lottie-react";
 import { particles } from "./particles";
 import 'particles.js';
-import TypedText from '../TypedText/TypedText';
-import  {Container, Row } from 'react-bootstrap';
-
 
 
 export default class Hero extends Component {
@@ -26,30 +23,35 @@ export default class Hero extends Component {
   }
   render() {
     return(
-      <Container className="hero-container" id="hero">
-        <Row className="canvas-content-wrapper">
-        <div className="col-md-6 mt-4">
+      <div className="col-10 mx-auto">
+
+        <div className="row">
+          <div className="col-md-6 pt-5 pt-lg-0 order-1 order-lg-1 d-flex justify-content-center flex-column">
+
           <div className="canvas-content">
           <div className="canvas-content-text-centred">
             <Hello/>
-            <p className="canvas-content-small">I am</p>
+            <p className="canvas-content-text-small">I am</p>
             <p className="canvas-content-text-title">Oak Arboleda</p>
-            < TypedText/>
+            <p className="canvas-content-text-xsmall">Powered by caffiene.</p>
           </div>
           </div>
 
         </div>
-        <div className="col-md-6 mt-4">
-          <div className="canvas-content-image-wrapper">
-            {illustration.animated ? (
+
+          <div className="col-lg-6 order-2 order-lg-2 header-img">
+
+          {illustration.animated ? (
               <Lottie animationData={girl} />
             ) : (
-              <img className="profile" alt="profile" />
+              <img  className="img-fluid animated"
+                    alt="my-pic"
+              />
             )}
           </div>
+
         </div>
-        </Row>
-      </Container>
+        </div>
    )
   }
 

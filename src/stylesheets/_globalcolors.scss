@@ -1,15 +1,27 @@
 
 
+// Primary colors
+$primary: #253031;
+$secondary: #868dc3;
+$third: #adb8d1;
+$darkest: #0A0908;
+$lighest: #F6F7F2;
+/* SCSS HSL */
+$xiketic: hsla(267, 39%, 5%, 1);
+$cadet-blue: hsla(184, 23%, 60%, 1);
+$plump-purple: hsla(247, 37%, 45%, 1);
+$lavender-blush: hsla(349, 57%, 95%, 1);
+$lavender-floral: hsla(257, 100%, 78%, 1);
+// text colors Dark theme
+
+
 // text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
-$subTitle: #868e96;
+$titleColor: #F6F7F2;
+$subTitle: #adb8d1;
 $cardSubtitle: #666666;
-$talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #262626;
+
 
 // button colors
-
 $buttonColor: #66fcf1;
 $buttonHover: #868dc3;
 $topButtonHover: #adb8d1;

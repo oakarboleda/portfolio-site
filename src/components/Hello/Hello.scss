@@ -1,4 +1,8 @@
+@import "../../stylesheets/custom";
+@import "../../stylesheets/_globalcolors";
+
 .Hello {
-  margin: 10% 0;
-  font-size: 1em;
+  margin: 2% 0;
+  font-size: 3em;
+  color: $third;
 }

@@ -1,14 +1,15 @@
 import React from 'react';
 import './HomePage.scss';
+import {Container} from 'react-bootstrap';
 import Hero from '../../components/Hero/Hero';
 
 
 const HomePage = () => (
-  <div className="section" id="home" data-testid="HomePage">
-    <div className="canvas">
-      <div id='particles-js'/>
+  <div className="home-section" id="home">
+    <div id='particles-js'/>
+    <Container fluid className="home-content">
       <Hero/>
-  </div>
+    </Container>
   </div>
 );
 
