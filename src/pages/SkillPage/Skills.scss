@@ -5,26 +5,20 @@
   flex-direction: column;
   margin-left: 15%;
 }
-
 .App-Content {
   width: 90%;
   height: auto;
   display: flex;
-  margin: 8%;
-  margin-top: 2.2%;
-  background-color: var(--body-bg);
-  color: var(--body-color);
+  margin: 2.2% 8% 8%;
+  background-color: white;
   border-radius: 10px;
   border: #e2effc 1px solid;
   padding: 5%;
   text-align: left;
   flex-direction: column;
-  transition: all 0.5s;
+  transition: all .5s;
 }
-
 .skill-img {
   width: 15vh;
   padding: 5px;
 }
-
-/*# sourceMappingURL=Skills.css.map */

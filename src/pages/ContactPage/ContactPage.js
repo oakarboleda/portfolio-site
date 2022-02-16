@@ -2,7 +2,7 @@ import React from 'react';
 import { contactInfo} from "../../resumeData";
 
 const ContactPage = () => (
-  <div className="ContactPage container fluid py-1" data-testid="ContactPage">
+  <div className="ContactPage container fluid py-1">
    <div className="container">
        <div className="main contact-margin-top" id="contact">
          <div className="contact-div-main">

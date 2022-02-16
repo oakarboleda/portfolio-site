@@ -22,7 +22,7 @@ const Project = () => {
   return (
     <Container>
       <Row id="projects">
-        <h4 color="#0b0710"> Current Projects </h4>
+        <h4> Current Projects </h4>
             <ProjectCard
               key={appState.item}
             isLoading={appState.loading}

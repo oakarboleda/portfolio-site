@@ -4,9 +4,9 @@ const illustration = {
 const about = {
   show: true,
   heading: "About Me",
-  imageSize: 375,
+ subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   message:
-    "I’m a full-stack engineer, a designer, and game enthusiast",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   resume: "https://drive.google.com/file/d/1CFB-WT-791OGMIHncnBDOlpV1aoFbEs2/view?usp=sharing",
 };
 
@@ -353,17 +353,12 @@ const skills = {
   ],
 };
 
-const dataStrings = [
-  "Powered by caffeine"
-];
-
 const contactInfo = {
-  title: "Contact Me ☎️",
+  title: "Contact Me️",
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-6260680915",
   email_address: "oakarboleda@gmail.com"
 };
 
 
-export { illustration, about, skills, dataStrings, contactInfo };
+export { illustration, about, skills, contactInfo };

@@ -1,19 +1,16 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './stylesheets/custom.scss';
+import './stylesheets/App.scss';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
 // Import Bootstrap CSS and JS
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 

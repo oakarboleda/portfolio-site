@@ -5,9 +5,20 @@ import Projects from '../../components/ProjectCard/Projects';
 
 
 const ProjectsPage = () => (
-  <div className="ProjectsPage" data-testid="ProjectsPage">
-  <Projects/>
-  </div>
+  <section id="portfolio" className="portfolio section-bg">
+    <div className="container mt-4">
+      <div className="section-title">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+      <div className="row portfolio-container">
+        <Projects/>
+      </div>
+
+    </div>
+  </section>
 );
 
 

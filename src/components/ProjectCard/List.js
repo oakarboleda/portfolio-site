@@ -13,7 +13,6 @@ const List = (props) => {
       {repos.map((repo) => {
         return (
           <Col md={4} className="py-md-2">
-
             <Card>
               <Card.Body>
             <p>

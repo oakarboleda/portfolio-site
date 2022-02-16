@@ -1,48 +1,36 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import './stylesheets/App.scss';
 import HomePage from './pages/HomePage/HomePage';
 import AboutMe from './pages/AboutMe/AboutMe';
-import Footer from './components/Footer/Footer.js';
-import './stylesheets/custom.scss';
-import Skills from './pages/Skills/Skills';
-import Projects from './components/ProjectCard/Projects';
-import ContactPage from './pages/ContactPage/ContactPage';
-import Navbar from './components/Header/Header';
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      foo: 'bar',
-    };
-  }
-  render() {
-    return (
-      <Router>
-        <Navbar />
-
-          <HomePage />
-          <AboutMe />
-          <Skills />
-          <Projects />
-          <ContactPage />
+import SkillPage from './pages/SkillPage/SkillPage';
+import {Navbar, Container, Nav, NavDropdown}  from 'react-bootstrap';
 
 
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/about">
-            <AboutMe />
-          </Route>
-          <Route path="/skills">
-            <Skills />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    );
-  }
+export default function App() {
+  return (
+<>
+  <Navbar collapseOnSelect bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#link">Link</Nav.Link>
+              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <HomePage/>
+      <AboutMe/>
+      <SkillPage/>
+</>
+  );
 }
-
-export default App;
