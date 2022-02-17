@@ -1,4 +1,7 @@
+/* SCSS HEX */
 /* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
 #tsparticles {
   position: absolute;
   top: 0;
@@ -24,13 +27,13 @@
 }
 
 .canvas-content-text-small {
-  color: #adb8d1;
+  color: #A1A6B4;
   margin-bottom: 50px;
   font-size: 2.5em;
 }
 
 .canvas-content-text-xsmall {
-  color: #adb8d1;
+  color: #A1A6B4;
   margin-bottom: 50px;
   font-size: 1em;
 }
@@ -40,7 +43,7 @@
 }
 
 .canvas-content-text-title {
-  color: #F6F7F2;
+  color: #F8F8F8;
   margin-left: -5px !important;
   font-size: 5em;
   font-weight: 900;

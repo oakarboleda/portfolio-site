@@ -1,27 +1,50 @@
 
+/* SCSS HEX */
+$eerie-black: #232323ff;
+$st-patricks-blue: #272e72ff;
+$maximum-blue-purple: #afbbf2ff;
+$light-goldenrod-yellow: #eaf0ceff;
+$eggshell: #e6e1c5ff;
 
-// Primary colors
-$primary: #253031;
-$secondary: #868dc3;
-$third: #adb8d1;
-$darkest: #0A0908;
-$lighest: #F6F7F2;
 /* SCSS HSL */
-$xiketic: hsla(267, 39%, 5%, 1);
-$cadet-blue: hsla(184, 23%, 60%, 1);
-$plump-purple: hsla(247, 37%, 45%, 1);
-$lavender-blush: hsla(349, 57%, 95%, 1);
-$lavender-floral: hsla(257, 100%, 78%, 1);
-// text colors Dark theme
+$eerie-black: hsla(0, 0%, 14%, 1);
+$st-patricks-blue: hsla(234, 49%, 30%, 1);
+$maximum-blue-purple: hsla(229, 72%, 82%, 1);
+$light-goldenrod-yellow: hsla(71, 53%, 87%, 1);
+$eggshell: hsla(51, 40%, 84%, 1);
+
+/* SCSS RGB */
+$eerie-black: rgba(35, 35, 35, 1);
+$st-patricks-blue: rgba(39, 46, 114, 1);
+$maximum-blue-purple: rgba(175, 187, 242, 1);
+$light-goldenrod-yellow: rgba(234, 240, 206, 1);
+$eggshell: rgba(230, 225, 197, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-right: linear-gradient(90deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-bottom: linear-gradient(180deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-left: linear-gradient(270deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-top-right: linear-gradient(45deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-bottom-right: linear-gradient(135deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-top-left: linear-gradient(225deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-bottom-left: linear-gradient(315deg, #232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+$gradient-radial: radial-gradient(#232323ff, #272e72ff, #afbbf2ff, #eaf0ceff, #e6e1c5ff);
+
+$progressBarBackground: rgb(243, 239, 239);
+$progressBarSpanBG: #aaa5ff;
 
 
-// text colors light theme
-$titleColor: #F6F7F2;
-$subTitle: #adb8d1;
+
+
+
+
+$titleColor: #F8F8F8;
+$subTitle: #A1A6B4;
 $cardSubtitle: #666666;
 
 
 // button colors
-$buttonColor: #66fcf1;
+$buttonColor: #94C5CC;
 $buttonHover: #868dc3;
 $topButtonHover: #adb8d1;

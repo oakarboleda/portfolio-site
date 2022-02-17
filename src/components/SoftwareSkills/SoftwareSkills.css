@@ -1,0 +1,37 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+i {
+  color: #232323;
+}
+
+.software-skill-inline > i:hover {
+  color: #232323;
+}
+
+.software-skill-inline > p {
+  color: #232323;
+  font-size: 10px;
+}
+
+.software-skill-inline > i:hover ~ p {
+  color: #868dc3;
+}
+
+/*# sourceMappingURL=SoftwareSkills.css.map */

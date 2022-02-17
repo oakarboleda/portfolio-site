@@ -1,5 +1,4 @@
 @import "_globalcolors";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
 html {
   --section-background-color: linear-gradient(
@@ -22,3 +21,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.font-loader {
+  font-family: 'Nunito Sans', sans-serif;
+  p {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  h2 {
+    font-family: 'Secular One', sans-serif;
+
+  }
+  h3 {
+    font-family: 'Secular One', sans-serif;
+
+  }
+}
+

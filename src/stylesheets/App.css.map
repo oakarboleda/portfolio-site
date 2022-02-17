@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["_globalcolors.scss","App.scss"],"names":[],"mappings":"AAQA;ACPQ;AAER;EACE;AAAA;AAAA;AAAA;AAAA;EAMA;AAAA;AAAA;AAAA;AAAA;EAMA;;;AAGF;EACE;EACA;EACA","file":"App.css"}
+{"version":3,"sourceRoot":"","sources":["_globalcolors.scss","App.scss"],"names":[],"mappings":"AACA;AAOA;AAOA;AAOA;ACpBA;EACE;AAAA;AAAA;AAAA;AAAA;EAMA;AAAA;AAAA;AAAA;AAAA;EAMA;;;AAGF;EACE;EACA;EACA;;;AAEF;EACE;;AACA;EACE;;AAEF;EACE;;AAGF;EACE","file":"App.css"}

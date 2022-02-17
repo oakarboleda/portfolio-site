@@ -1,6 +1,6 @@
 .outer-container {
-  background-color: var(--white);
-  z-index: 2000;
+  background-color: white;
+  position: relative;
 }
 
 .footer-container {
@@ -107,4 +107,4 @@
   }
 }
 
-/*# sourceMappingURL=Footer.css.map */
+/*# sourceMappingURL=ContactPage.css.map */

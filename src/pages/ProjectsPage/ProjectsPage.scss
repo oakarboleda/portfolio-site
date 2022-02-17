@@ -1,4 +1,9 @@
 @import "../../stylesheets/_globalcolors";
+#portfolio {
+  background-color: white;
+  padding: 7em 0;
+  position: relative;
+}
 ;.section-bg {
   background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
 
@@ -8,8 +13,7 @@
   padding-bottom: 30px;
   color: $subTitle;
 }
-.section-title h2 {
-  font-size: 32px;
+.section-title h1 {
   font-weight: bold;
   margin-bottom: 15px;
   padding-bottom: 15px;

@@ -1,21 +1,41 @@
 import React, { Component } from "react";
 import './Skills.scss';
-import SkillBar from 'react-skillbars';
-const skills = [
-  {type: "React", level: 64},
-  {type: "Javascript", level: 75},
-  {type: "React Native", level: 75},
-  {type: "NodeJS", level: 35},
-];
+import {Fade} from "react-reveal";
+import { skillsSection} from "../../resumeData";
+import SoftwareSkills from '../../components/SoftwareSkills/SoftwareSkills';
 
 class SkillsPage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      skillsSection: null,
+    }
+  }
   render() {
     return (
-      <div className="container" id="tech">
-        <h3>Current Skills</h3>
-        <br/>
-        <SkillBar skills={skills}/>
-      </div>
+            <Fade right duration={1000}>
+                <div className="skills-text-div">
+                  <h1 className= "skills-heading">
+                    {skillsSection.title}
+                  </h1>
+                  <p className="subTitle skills-text-subtitle">
+                    {skillsSection.subTitle}
+                  </p>
+                  <SoftwareSkills />
+                  <div>
+                    {skillsSection.skills.map((skills, i) => {
+                      return (
+                        <p
+                          key={i}
+                          className="subTitle skills-text">
+                          {skills}
+                        </p>
+                      );
+                    })}
+                  </div>
+                </div>
+              </Fade>
+
     );
   }
 }

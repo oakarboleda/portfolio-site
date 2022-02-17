@@ -20,20 +20,45 @@ export default class Hero extends Component {
           options={{
             background: {
               color: {
-                value: "#0A0908",
+                value: "#232323",
               },
             },
             fpsLimit: 120,
             interactivity: {
               detect_on: "canvas",
               events: {
-                onhover: {
+                onhover:{
                   enable: false,
                   mode: "repulse"
                 },
                 onclick: { enable: true, mode: "push" },
                 resize: true
               },
+              modes: {
+                grab: {
+                  distance: 400,
+                  line_linked: {
+                    opacity: 1
+                  }
+                },
+                bubble: {
+                  distance: 400,
+                  size: 40,
+                  duration: 2,
+                  opacity: 8,
+                  speed: 3
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4
+                },
+                push: {
+                  particles_nb: 4
+                },
+                remove: {
+                  particles_nb: 2
+                }
+              }
             },
             particles: {
               number: {
@@ -43,11 +68,15 @@ export default class Hero extends Component {
                   value_area: 800
                 }
               },
+              color: {
+                // value: "#0b0c10"
+              },
               shape: {
                 type: "polygon",
                 stroke: {
                   width: 2,
-                  color: "#868dc3"
+                  // color: "#30716e"
+                  color: "#46496c"
                 },
                 polygon: {
                   nb_sides: 6
@@ -59,11 +88,14 @@ export default class Hero extends Component {
                 }
               },
               opacity: {
-                value: .3,
+                value: 1,
                 random: true,
                 anim: {
                   enable: false
                 }
+              },
+              collisions: {
+                enable: true,
               },
               size: {
                 value: 8,
@@ -74,6 +106,13 @@ export default class Hero extends Component {
                   size_min: 0.2,
                   sync: true
                 }
+              },
+              links: {
+                enable: false,
+                distance: 100,
+                color: "#6ab4b1",
+                opacity: 1,
+                width: 1
               },
               move: {
                 enable: true,
@@ -88,23 +127,16 @@ export default class Hero extends Component {
                   rotateX: 600,
                   rotateY: 1200
                 }
-              },
-              line_linked: {
-                enable: false,
-                distance: 100,
-                color: "#6ab4b1",
-                opacity: 1,
-                width: 1
-              },
+              }
             },
-            detectRetina: true,
+            detectRetina: false,
           }}
         />
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5 mb-3">
           <div className="col-md-6 pt-5 pt-lg-0 order-1 order-lg-1 d-flex justify-content-center flex-column">
             <Hello/>
             <p className="canvas-content-text-small">I am</p>
-            <p className="canvas-content-text-title">Oak Arboleda</p>
+            <p className="font-loader canvas-content-text-title">Oak Arboleda</p>
             <p className="canvas-content-text-xsmall">Powered by caffiene.</p>
           </div>
           <div className="col-10 col-sm-8 col-lg-6">

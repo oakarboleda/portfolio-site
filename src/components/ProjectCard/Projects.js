@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from 'react-bootstrap';
 import withListLoading from '../ListLoading/ListLoading';
 import List from './List';
 import './ProjectCard.scss';
@@ -20,16 +19,15 @@ const Project = () => {
       });
   }, [setAppState]);
   return (
-    <Container>
-      <Row id="projects">
-        <h4> Current Projects </h4>
+    <div className="container" id="projects">
+      <div className="row">
             <ProjectCard
-              key={appState.item}
+              key={appState.id}
             isLoading={appState.loading}
             repos={appState.repos}
           />
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 
