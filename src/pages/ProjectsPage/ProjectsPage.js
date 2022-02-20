@@ -9,9 +9,7 @@ const ProjectsPage = () => (
     <div className="container mt-4">
       <div className="section-title">
         <h1 className="font-loader">Portfolio</h1>
-        <p className="font-loader">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
+        <p className="font-loader">Here is a list of current repos living in my github.</p>
       </div>
       <div className="row portfolio-container">
         <Projects/>

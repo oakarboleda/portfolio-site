@@ -132,18 +132,19 @@ export default class Hero extends Component {
             detectRetina: false,
           }}
         />
+        <Hello
+        />
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5 mb-3">
-          <div className="col-md-6 pt-5 pt-lg-0 order-1 order-lg-1 d-flex justify-content-center flex-column">
-            <Hello/>
-            <p className="canvas-content-text-small">I am</p>
-            <p className="font-loader canvas-content-text-title">Oak Arboleda</p>
-            <p className="canvas-content-text-xsmall">Powered by caffiene.</p>
+          <div className="col-md-6 col-sm-12  col-lg-6 order-1 order-lg-1 justify-content-center flex-column">
+            <p className="font-loader canvas-content-text-small">I am</p>
+            <h2 className="font-loader" id="cursive">Oak Arboleda</h2>
+            <p className="font-loader canvas-content-text-small">Powered by caffiene.</p>
           </div>
-          <div className="col-10 col-sm-8 col-lg-6">
+          <div className="col-md-6 col-sm-12 col-lg-6 justify-content-center">
           {illustration.animated ? (
-              <Lottie animationData={girl} />
+              <Lottie className="my-image" animationData={girl} />
             ) : (
-              <img  className="d-block mx-sm-auto img-fluid" alt="my-pic"
+              <img className="d-block mx-sm-auto img-fluid" alt="my-pic"
               />
             )}
           </div>

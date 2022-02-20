@@ -10,6 +10,29 @@
   height: 100%;
 }
 
+#cursive {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  font-size: 173px;
+}
+
+.my-image {
+  height: 100vh;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.my-image::before {
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  content: "";
+  z-index: -2;
+  left: 6em;
+  top: 1.5em;
+  border: 5px solid #fff;
+}
+
 .canvas-content-wrapper {
   position: absolute;
   top: 0;
@@ -28,8 +51,8 @@
 
 .canvas-content-text-small {
   color: #A1A6B4;
-  margin-bottom: 50px;
-  font-size: 2.5em;
+  margin-bottom: 15px;
+  font-size: 1.2em;
 }
 
 .canvas-content-text-xsmall {
@@ -73,6 +96,19 @@
 @media (max-width: 600px) {
   .canvas-content {
     padding: 0 10%;
+  }
+
+  #cursive {
+    font-family: "Amatic SC", cursive;
+    color: white;
+    font-size: 50px;
+  }
+
+  .my-image {
+    height: 50vh;
+  }
+  .my-image::before {
+    display: none;
   }
 }
 @keyframes MoveUpDown {

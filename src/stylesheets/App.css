@@ -22,11 +22,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-loader {
-  font-family: "Nunito Sans", sans-serif;
-}
 .font-loader p {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 .font-loader h2 {
   font-family: "Secular One", sans-serif;

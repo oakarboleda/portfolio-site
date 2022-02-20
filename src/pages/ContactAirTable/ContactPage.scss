@@ -1,9 +1,5 @@
-@import "../../stylesheets/_globalcolors";
-
-
-
 .outer-container {
-  background-color: $white;
+  background-color: white;
   position: relative;
 }
 
@@ -46,12 +42,12 @@
       padding: 10px 15px;
       border-radius: 5px 0 0 5px;
       outline: none;
-      border: 1px solid $eggshell;
+      border: 1px solid var(--light);
       width: 450px;
       font-size: 1rem;
 
       &:focus {
-        border: 1px solid $st-patricks-blue;
+        border: 1px solid var(--primary);
       }
     }
 
@@ -59,9 +55,9 @@
       padding: 10px 15px;
       border: none;
       font-size: 1rem;
-      background-color: $st-patricks-blue;
+      background-color: var(--primary);
       border-radius: 0 5px 5px 0;
-      color: $eggshell;
+      color: var(--white);
       cursor: pointer;
 
     }
@@ -82,8 +78,8 @@
       cursor: pointer;
 
       &:hover {
-        background-color: $st-patricks-blue;
-        color: $eggshell;
+        background-color: var(--primary);
+        color: var(--white);
       }
 
     }

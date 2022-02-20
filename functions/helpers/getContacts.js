@@ -1,16 +1,12 @@
-const { table } = require('./airtable');
-const formattedReturn = require('./formattedReturn');
+import { table, minifyItems } from "./airtable";
 
-module.exports = async (event) => {
+export default async (_req, res) => {
   try {
-    const contacts = await table.select().firstPage();
-    const formattedContacts = contacts.map((contacts) => ({
-      id: contacts.id,
-      ...contacts.fields,
-    }));
-    return formattedReturn(200, formattedContacts);
-  } catch (err) {
+    const records = await table.select({}).firstPage();
+    const minfiedItems = minifyItems(records);
+    res.status(200).json(minfiedItems);
+  } catch (error) {
     console.error(err);
-    return formattedReturn(500, {msg: 'Something went wrong'});
+    res.status(500).json({ msg: "Something went wrong! 😕" });
   }
 };

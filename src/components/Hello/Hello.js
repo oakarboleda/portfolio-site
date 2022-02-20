@@ -1,21 +1,16 @@
 import React from 'react';
 import './Hello.scss';
-
 import Typical from "react-typical";
 
 const Hello = () => (
-  <div className="Hello">
+  <div className="row align-items-stretch m-auto">
     <Typical
-      steps={[ "Hello,", 3000,
-        "Hallo Welt,",3000,
-        "Bonjour,", 3000,
-        "¡Hola,", 3000,
-        "Hei maailma,", 3000,
-        "Kumusta,",3000,
-        "안녕하세요 월드,",3000,
-        "こんにちは世界,",3000]}
+      className="font-loader customtext"
+      steps={[ "Hello,", 5000,
+        "Bonjour,", 4000,
+        "¡Hola,", 4000,
+        "Kumusta,",4000]}
       loop={Infinity}
-      wrapper="p"
     />
   </div>
 );

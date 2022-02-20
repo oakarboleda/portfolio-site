@@ -11,9 +11,8 @@ const SoftwareSkills = () => (
             key={i}
             className="software-skill-inline"
           >
-
-            <div className="col-sm">
-              <p>{skills.icon}</p></div>
+            <div className="col-md-3">
+              <p className="">{skills.icon}</p></div>
             <p className="font-loader">{skills.skillName}</p>
           </li>
         );

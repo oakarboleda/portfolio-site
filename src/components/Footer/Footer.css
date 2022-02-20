@@ -1,6 +1,10 @@
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
 .outer-container {
-  background-color: var(--white);
-  z-index: 2000;
+  background-color: #ffff;
+  position: relative;
 }
 
 .footer-container {
@@ -40,20 +44,20 @@
   padding: 10px 15px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  border: 1px solid var(--light);
+  border: 1px solid #e6e1c5;
   width: 450px;
   font-size: 1rem;
 }
 .news-letter .form-group input:focus {
-  border: 1px solid var(--primary);
+  border: 1px solid #272e72;
 }
 .news-letter .form-group button {
   padding: 10px 15px;
   border: none;
   font-size: 1rem;
-  background-color: var(--primary);
+  background-color: #272e72;
   border-radius: 0 5px 5px 0;
-  color: var(--white);
+  color: #e6e1c5;
   cursor: pointer;
 }
 .news-letter .social-block {
@@ -72,8 +76,8 @@
   cursor: pointer;
 }
 .news-letter .social-block i:hover {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: #272e72;
+  color: #e6e1c5;
 }
 
 .footer-end {

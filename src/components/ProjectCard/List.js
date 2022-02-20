@@ -1,8 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
+import axios from 'axios'
 
+const List = ({ repos }) => {
 
-const List = ({repos}) => {
   if (!repos || repos.length === 0) return <p>No repos, sorry</p>;
   return (
     <div className="row">
@@ -18,6 +19,11 @@ const List = ({repos}) => {
               {repo.svn_url ?
                 <CardButtons svn_url={repo.svn_url} /> : null}
               <hr />
+                {repo.languages_url ? (
+                  <Language languages_url={repo.languages_url} repo_url={repo.svn_url} />
+                ) : (
+                  <Skeleton count={3} />
+                )}
                 <CardFooter star_count={repo.stargazers_count} repo_url={repo.svn_url} pushed_at={repo.pushed_at} />
               </div>
             </div>
@@ -29,21 +35,66 @@ const List = ({repos}) => {
 
   );
 };
+const Language = ({ languages_url, repo_url }) => {
+  const [data, setData] = useState([]);
 
+  const handleRequest = useCallback(async () => {
+    try {
+      const response = await axios.get(languages_url);
+      return setData(response.data);
+    } catch (error) {
+      console.error(error.message);
+    }
+  }, [languages_url]);
+
+  useEffect(() => {
+    handleRequest();
+  }, [handleRequest]);
+
+  const array = [];
+  let total_count = 0;
+  for (let index in data) {
+    array.push(index);
+    total_count += data[index];
+  }
+
+  return (
+    <div className="pb-3">
+      Languages:{" "}
+      {array.length
+        ? array.map((language) => (
+          <a
+            key={language}
+            className="badge badge-light card-link"
+            href={repo_url + `/search?l=${language}`}
+            target=" _blank"
+          >
+            {language}:{" "}
+            {Math.trunc((data[language] / total_count) * 1000) / 10} %
+          </a>
+        ))
+        : "code yet to be deployed."}
+    </div>
+  );
+};
 const CardButtons = ({ svn_url }) => {
   return (
     <>
       <div className="row justify-content-center">
-        <button className="btn btn-primary btn-sm m-2">
-          Clone Project
-        </button>
-        <button className="btn btn-primary btn-sm m-2">
-          Repo
-        </button>
+        <a
+          href={`${svn_url}/archive/master.zip`}
+          className="btn btn-outline-secondary btn-sm m-1"
+        >
+          <i className="fab fa-github" /> Clone Project
+        </a>
+        <a href={svn_url} target=" _blank" className="btn btn-outline-secondary btn-sm m-1">
+          <i className="fab fa-github" /> Repo
+        </a>
       </div>
     </>
   );
 };
+
 const CardFooter = ({ star_count, repo_url, pushed_at }) => {
   const [updated_at, setUpdated_at] = useState("0 mints");
 
@@ -82,7 +133,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
           <i className="fab fa-github" /> Stars{" "}
           <span className="badge badge-dark">{star_count}</span>
         </span>
-      <p className="text-muted">Updated {updated_at}</p>
+        <p className="text-muted"><small>Updated {updated_at}</small></p>
     </div>
     </div>
     </div>

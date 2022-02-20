@@ -5,7 +5,7 @@ const repoURL = "https://oakarboleda.github.io/portfolio-site/";
 ghpages.publish(
   pathname,
   {
-    branch: "master",
+    branch: "main",
     repo: repoURL,
   },
   (err) => {

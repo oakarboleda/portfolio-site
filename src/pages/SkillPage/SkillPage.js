@@ -15,12 +15,14 @@ class SkillsPage extends Component {
     return (
             <Fade right duration={1000}>
                 <div className="skills-text-div">
-                  <h1 className= "skills-heading">
+                  <figure className="text-center">
+                    <h1 className= "skills-heading justify-content-center">
                     {skillsSection.title}
                   </h1>
                   <p className="subTitle skills-text-subtitle">
                     {skillsSection.subTitle}
                   </p>
+                  </figure>
                   <SoftwareSkills />
                   <div>
                     {skillsSection.skills.map((skills, i) => {
