@@ -1,6 +1,11 @@
 import React from 'react';
 import './ContactPage.scss';
 
+/*
+* I know this contact form goes nowhere HA, but I working on getting my airtable api to connect with my form and auto fill it for me
+*
+* */
+
 
 export default function Contact() {
   return (
@@ -46,13 +51,23 @@ export default function Contact() {
               />
             </div>
             <div className="form-group">
+              <label htmlFor="phone">Phone</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                className="form-element"
+                placeholder="(666)666-1111"
+              />
+            </div>
+            <div className="form-group">
               <label htmlFor="company">Company</label>
               <input
                 type="text"
                 name="company"
                 id="company"
                 className="form-element"
-                placeholder="john.doe@example.com"
+                placeholder="I work for..."
               />
             </div>
             <div className="form-group full">
