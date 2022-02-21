@@ -6,9 +6,13 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: 
+    - main
+    - release/*
   pull_request:
-    branches: [ main ]
+    branches: 
+    - main
+    - release/*
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,10 +37,16 @@ jobs:
        - name: Adding Known Hosts
          run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
          
-       - name: Deploy with rsync
-         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/oakarboleda/oakarboleda.com/dist/
-
-     
+       - name: SSH Server Deploy
+  # You may pin to the exact commit or the version.
+  # uses: kostya-ten/ssh-server-deploy@e0deb814bc458a68b61f6597a865d096e33eb586
+         uses: kostya-ten/ssh-server-deploy@v4
+         with:
+            host: ${{ secrets.SSH_HOST }} 
+            username: ${{ secrets.SSH_USERNAME }} 
+            password: ${{ secrets.SSH_PASSWORD }} 
+            private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
+            
        - name: Use Node.js ${{ matrix.node-version }}
          uses: actions/setup-node@v1
          with:
