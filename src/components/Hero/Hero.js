@@ -138,7 +138,7 @@ export default class Hero extends Component {
           <div className="col-xl order-first justify-content-center py-5 word-content">
             <p className="font-loader canvas-content-text-small text-center">I am</p>
             <h2 className="font-loader text-center" id="cursive">Oak Arboleda</h2>
-            <p className="font-loader canvas-content-text-small text-center">Powered by caffiene.</p>
+            <p className="font-loader canvas-content-text-small text-center">Powered by caffeine.</p>
           </div>
           <div className="col-xl justify-content-center img-content">
           {illustration.animated ? (
