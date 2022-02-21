@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.scss';
-import { FaGithubSquare, FaHeart, FaLinkedinIn, FaReact, FaRegCalendarAlt, FaRegCopyright } from 'react-icons/fa';
+import { FaGithubSquare, FaHeart, FaLinkedinIn, FaReact, FaRegCalendarAlt } from 'react-icons/fa';
 
 
 
