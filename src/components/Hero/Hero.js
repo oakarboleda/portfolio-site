@@ -134,13 +134,13 @@ export default class Hero extends Component {
         />
         <Hello
         />
-        <div className="row flex-lg-row-reverse align-items-center g-5 py-5 mb-3">
-          <div className="col-md-6 col-sm-12  col-lg-6 order-1 order-lg-1 justify-content-center flex-column">
-            <p className="font-loader canvas-content-text-small">I am</p>
-            <h2 className="font-loader" id="cursive">Oak Arboleda</h2>
-            <p className="font-loader canvas-content-text-small">Powered by caffiene.</p>
+        <div className="row align-items-center g-5 py-5 mb-3">
+          <div className="col-xl order-first justify-content-center py-5 word-content">
+            <p className="font-loader canvas-content-text-small text-center">I am</p>
+            <h2 className="font-loader text-center" id="cursive">Oak Arboleda</h2>
+            <p className="font-loader canvas-content-text-small text-center">Powered by caffiene.</p>
           </div>
-          <div className="col-md-6 col-sm-12 col-lg-6 justify-content-center">
+          <div className="col-xl justify-content-center img-content">
           {illustration.animated ? (
               <Lottie className="my-image" animationData={girl} />
             ) : (

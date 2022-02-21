@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../stylesheets/_globalcolors.scss","Hello.scss"],"names":[],"mappings":"AACA;AAUA;AAOA;AAOA;ACtBA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"Hello.css"}
+{"version":3,"sourceRoot":"","sources":["../../stylesheets/_globalcolors.scss","Hello.scss"],"names":[],"mappings":"AACA;AAUA;AAOA;AAOA;ACtBA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIF;EACE;IACE;;;AAGJ;EACE;IACA","file":"Hello.css"}

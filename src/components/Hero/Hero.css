@@ -10,6 +10,14 @@
   height: 100%;
 }
 
+.word-content {
+  order: 1;
+}
+
+.image-content {
+  order: 2;
+}
+
 #cursive {
   font-family: "Amatic SC", cursive;
   color: white;
@@ -88,6 +96,14 @@
   border: 5px solid #fff;
 }
 
+@media (max-device-width: 1224px) {
+  .my-image {
+    height: 50vh;
+  }
+  .my-image::before {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .canvas-content {
     padding: 0 15%;
@@ -96,6 +112,10 @@
 @media (max-width: 600px) {
   .canvas-content {
     padding: 0 10%;
+  }
+
+  .canvas-content-text-small {
+    align-items: center;
   }
 
   #cursive {

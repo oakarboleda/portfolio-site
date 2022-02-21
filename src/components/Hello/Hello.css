@@ -17,4 +17,15 @@
   opacity: 0.17;
 }
 
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .customtext {
+    font-size: 79px;
+  }
+}
+@media (max-width: 600px) {
+  .customtext {
+    font-size: 45px;
+  }
+}
+
 /*# sourceMappingURL=Hello.css.map */

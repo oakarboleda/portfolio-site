@@ -7,11 +7,11 @@ const AboutMe = () => {
   return (
     <section id="about" className="about">
       <div className="container-fluid mt-4">
-        <div className="row no-gutters">
-          <div className="image col-md-5 d-flex align-items-stretch justify-content-center">
+        <div className="row">
+          <div className="image col-xl d-flex align-items-stretch justify-content-center">
            <img src={require('../../assets/cartoonself.png')} className="img-fluid"   alt="self"/>
           </div>
-          <div className="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+          <div className="col-xl ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
             <div className="content d-flex flex-column justify-content-center">
               <SkillsPage/>
             </div>
