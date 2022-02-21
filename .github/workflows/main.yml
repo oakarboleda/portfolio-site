@@ -34,7 +34,7 @@ jobs:
          run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
          
        - name: Deploy with rsync
-         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/oakarboleda.com/dist/
+         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/oakarboleda/oakarboleda.com/dist/
 
      
        - name: Use Node.js ${{ matrix.node-version }}
