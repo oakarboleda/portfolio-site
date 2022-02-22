@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning **Advance React, Python**
 
-- 👨‍💻 All of my projects are available at [https://www.oakarboleda.com](https://www.oakarboleda.com)
+
 
 - 💬 Ask me about **React, Shopify, Big Commerce, FullStack Development**
 
